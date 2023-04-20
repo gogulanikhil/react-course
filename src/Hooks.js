@@ -16,7 +16,7 @@ import React, {useState} from "react";
     // console.log(arr)
     // console.log(arr[0])
     // console.log(arr[1]);
-    // console.log(useState(0)); 
+    console.log(useState(0)); 
   return  <div className="App">
     <button onClick={incrementCount}>+</button>
     <span>{count}</span>
