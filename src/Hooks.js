@@ -13,8 +13,8 @@ import React, {useState} from "react";
     }
     // console.log(count)
     // console.log(setCount)
-    // console.log(arr)
-    // console.log(arr[0])
+    console.log(arr)
+    console.log(arr[0])
     // console.log(arr[1]);
     console.log(useState(0)); 
   return  <div className="App">
