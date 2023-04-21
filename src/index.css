@@ -28,6 +28,12 @@ li{
   background: #a03030;
   padding: 10px;
 }
+.form-component{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+  }
 @media screen and (min-width:768px){
   .comments-container{
     grid-template-columns: repeat(2,1fr);
@@ -55,3 +61,4 @@ height: 100%;
   cursor:pointer;
   text-transform: capitalize;
 }
+

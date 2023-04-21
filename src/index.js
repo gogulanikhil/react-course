@@ -9,9 +9,9 @@ import './index.css';
 // import App from'./EventHandling'
 // import App from './AdvancedHooks'
 // import App from './ArrayHooks'
-import App from './UseStateExamples'
+// import App from './UseStateExamples'
+import App from './UseStateExample2'
 import reportWebVitals from './reportWebVitals';
-import "./index.css";
 // import App from './App';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
