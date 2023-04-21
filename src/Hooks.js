@@ -4,9 +4,12 @@ import React, {useState} from "react";
     // [count]whatever we are passing default val;ue it will be stroed i the count
     // [setcount is a function] we are using for changing the default value
     const [count,setCount]=useState(0)
-
+console.log(useState(1));
     const incrementCount =()=>{
         setCount(count + 1)
+        // setCount((prevCount)=> prevCount+1)
+        // setCount((prevCount)=>prevCount+1)
+
     }
     const decrementCount=()=>{
         setCount(count-1)
@@ -23,4 +26,5 @@ import React, {useState} from "react";
     <button onClick={decrementCount}>-</button>
     </div>
    }
+
 export default App

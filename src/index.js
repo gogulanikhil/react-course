@@ -4,8 +4,11 @@ import './index.css';
 // import App from './PropsApp';
 // import App from './oldApp';
 // import App from './App'
-import App from './Hooks'
+// import App from './Hooks'
+// import App from './Basicsthings'
 // import App from'./EventHandling'
+// import App from './AdvancedHooks'
+import App from './ArrayHooks'
 import reportWebVitals from './reportWebVitals';
 import "./index.css";
 // import App from './App';
@@ -19,8 +22,14 @@ root.render(
     {/* <App /> */}
     {/* Eventsapp */}
     {/* <App /> */}
-    {/* new app */}
-    <App />
+    {/* Hooksapp */}
+    {/* <App /> */}
+    {/* BasicThings app*/}
+    {/* <App /> */}
+    {/* AdvancedHooks */}
+    {/* <App/> */}
+    {/* ArrayHooks*/}
+    <App/>
     
   </React.StrictMode>
 );
