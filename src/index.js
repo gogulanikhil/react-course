@@ -8,7 +8,8 @@ import './index.css';
 // import App from './Basicsthings'
 // import App from'./EventHandling'
 // import App from './AdvancedHooks'
-import App from './ArrayHooks'
+// import App from './ArrayHooks'
+import App from './UseStateExamples'
 import reportWebVitals from './reportWebVitals';
 import "./index.css";
 // import App from './App';
@@ -17,18 +18,13 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     {/* oldApp */}
-    {/* <App /> */}
     {/* propsapp */}
-    {/* <App /> */}
     {/* Eventsapp */}
-    {/* <App /> */}
     {/* Hooksapp */}
-    {/* <App /> */}
     {/* BasicThings app*/}
-    {/* <App /> */}
     {/* AdvancedHooks */}
-    {/* <App/> */}
     {/* ArrayHooks*/}
+    {/* usestateexals */}
     <App/>
     
   </React.StrictMode>
