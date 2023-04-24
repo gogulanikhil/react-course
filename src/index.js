@@ -10,7 +10,8 @@ import './index.css';
 // import App from './AdvancedHooks'
 // import App from './ArrayHooks'
 // import App from './UseStateExamples'
-import App from './UseStateExample2'
+// import App from './UseStateExample2'
+import App from './UseStateExample3';
 import reportWebVitals from './reportWebVitals';
 // import App from './App';
 
