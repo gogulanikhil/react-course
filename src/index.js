@@ -11,8 +11,11 @@ import './index.css';
 // import App from './ArrayHooks'
 // import App from './UseStateExamples'
 // import App from './UseStateExample2'
-import App from './UseStateExample3';
+// import App from './UseStateExample3';
+// import Usehook from './UseEffectHook';
 import reportWebVitals from './reportWebVitals';
+import App from './useEffectFetchingCocktail';
+// import App from './useEffectFetching';
 // import App from './App';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -25,9 +28,9 @@ root.render(
     {/* BasicThings app*/}
     {/* AdvancedHooks */}
     {/* ArrayHooks*/}
-    {/* usestateexals */}
+    {/* usestateexapls */}
+    {/* <Usehook/> */}
     <App/>
-    
   </React.StrictMode>
 );
 
