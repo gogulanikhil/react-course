@@ -14,13 +14,19 @@ import './index.css';
 // import App from './UseStateExample3';
 // import Usehook from './UseEffectHook';
 import reportWebVitals from './reportWebVitals';
-import App from './useEffectFetchingCocktail';
+import App from './ContextApi';
+// import App from './useContextApi'
+import { UserContextProvider } from './userContextProvider';
+// import App from './useEffectFetchingCocktail';
 // import App from './useEffectFetching';
 // import App from './App';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
+  <UserContextProvider>
+  <App/>
+  </UserContextProvider>)
+  // <React.StrictMode>
     {/* oldApp */}
     {/* propsapp */}
     {/* Eventsapp */}
@@ -30,9 +36,9 @@ root.render(
     {/* ArrayHooks*/}
     {/* usestateexapls */}
     {/* <Usehook/> */}
-    <App/>
-  </React.StrictMode>
-);
+  
+    
+  {/* </React.StrictMode> */}
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
