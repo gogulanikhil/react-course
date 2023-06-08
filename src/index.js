@@ -20,7 +20,8 @@ import reportWebVitals from './reportWebVitals';
 // import ParentComponent from './ContextApi';
 // import ParentComponent from './example';
 // import Final from './useReducer/useReducerOne';
-import App from './useReducer/useReducerOne';
+// import App from './useReducer/useReducerOne';
+import App from './useReducer/useReducerTwo'
 // import App from './useEffectFetchingCocktail';
 // import App from './useEffectFetching';
 // import App from './App';
