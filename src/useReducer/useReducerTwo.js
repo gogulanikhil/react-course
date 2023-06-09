@@ -66,20 +66,35 @@ import { useEffect, useReducer } from "react"
 const App=()=>{
 
 
-    const reducer=[]
+    const reducer=(state,action)=>{
+        if(action.type === "Userupdate"){
+            return {
+                ...state,
+                userData:action.payload
+            }
+        }
+    }
     // console.log(reducer); 
 
    const fetchUserUrl=async(URL)=>{
+    try {
         const response=await fetch(URL)
         const data=await response.json()
-        console.log(data)
+        dispatch({type:"Userupdate",payload:data})
+        // console.log(data)
+    } catch (error) {
+        
+    }
+     
     }
     // console.log(fetchUserUrl);
 
     useEffect(()=>{
         fetchUserUrl("https://jsonplaceholder.typicode.com/users")
     },[])
-    const initialState=[]
+    const initialState={
+        userData:[]
+    }
     // console.log(initialState);
 
    const [state,dispatch]=useReducer(reducer,initialState)
@@ -89,8 +104,20 @@ const App=()=>{
    return <>
     <h1>useReducerTwo</h1>
     
-    <h2>users information</h2>
-    
+    <h2>users information</h2>{
+        state.userData.map((eachUser)=>{
+            console.log(eachUser)
+            const {id,name,username,email}=eachUser
+            return <div>
+                <h1>id:{id}</h1>
+                <h2>name:{name}</h2>
+                <h2>username:{username}</h2>
+                <h1>email:{email}</h1>
+
+            </div>
+
+    })
+}    
     </>
 
 }
