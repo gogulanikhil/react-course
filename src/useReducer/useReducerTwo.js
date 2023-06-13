@@ -159,7 +159,7 @@ const App=()=>{
                 <h1>email:{email}</h1>
                 <button 
                 style={{color:"red",background:"yellow"}} 
-                onClick={dispatch({type:"Onclickedit",payload:{status:true,id:id,name,email,username}})}
+                onClick={()=>dispatch({type:"Onclickedit",payload:{status:true,id:id,name,email,username}})}
                 >edit</button>
                 <button 
                 style={{color:"yellow",background:"red"}} 
