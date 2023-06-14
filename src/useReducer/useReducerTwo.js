@@ -20,7 +20,7 @@ const App = () => {
       );
       return {
         ...state,
-        userData: newUsers,
+        updatedUsers: newUsers,
       };
     }
     if (action.type === "Onclickedit") {
@@ -42,7 +42,7 @@ const App = () => {
           return eachUser;
         }
       });
-      // console.log(updatedUsers);
+      console.log(updatedUsers);
       return {
         ...state,
         userData: updatedUsers,
@@ -50,7 +50,7 @@ const App = () => {
     }
     return state;
   };
-  // console.log(reducer);
+  //   console.log(reducer);
 
   const fetchUserUrl = async (URL) => {
     dispatch({ type: "Loading", payload: true });
@@ -59,7 +59,7 @@ const App = () => {
       const data = await response.json();
       dispatch({ type: "Userupdate", payload: data });
       dispatch({ type: "Loading", payload: false });
-      // console.log(data)
+      console.log(data);
     } catch (error) {}
   };
   // console.log(fetchUserUrl);
@@ -73,7 +73,7 @@ const App = () => {
     isEdititng: { status: false, id: "", name: "", email: "", username: "" },
     // isError:
   };
-  // console.log(initialState);
+  console.log(initialState);
 
   const [state, dispatch] = useReducer(reducer, initialState);
   if (state.isLoading) {
@@ -88,6 +88,16 @@ const App = () => {
   };
   const UpdateData = (id, name, username, email) => {
     dispatch({ type: "UPDATEDUSER", payload: { id, name, email, username } });
+    dispatch({
+      type: "Onclickedit",
+      payload: {
+        status: false,
+        id: id,
+        name: name,
+        email: email,
+        username: username,
+      },
+    });
   };
 
   //    console.log([state,dispatch])
